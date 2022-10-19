@@ -16,19 +16,11 @@ img {
 /* #endregion Header */
 
 /* #region Main */
-.num_generator {
+.my_container {
     width: 80%;
     margin: 3rem auto;
-    display: flex;
-    justify-content: space-around;
+    font-size: 2rem;
     background-color: red;
-}
-
-.slot {
-    font-size: 1.5rem;
-    border: 1px soldi black;
-    width: 30px;
-    height: 30px;
 }
 /* #endregion Main */
 
