@@ -1,0 +1,33 @@
+/* #region Common */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+/* #endregion Common */
+
+
+/* #region Header */
+
+/* #endregion Header */
+
+/* #region Main */
+.num_generator {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slot {
+    font-size: 1.5rem;
+}
+/* #endregion Main */
+
+/* #region Footer */
+
+/* #endregion Footer */
