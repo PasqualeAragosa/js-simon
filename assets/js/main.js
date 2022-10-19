@@ -17,29 +17,51 @@
  - Stampa a video i numeri indovinati
 */
 
-function randomNumGenerator() {
+/*
+
+*/
+
+//Genero un numero casuale da 1 a 100
+function getRandomNum() {
     return Math.floor((Math.random() * 100) + 1);
 };
 
+//Pulisco l'elemento nella DOM
 function clearDisplay() {
-    for (let i = 0; i < 5; i++) {
-        const slotEl = document.querySelectorAll('.slot').values;
-        console.log('slotEl:', slotEl);
-        slotEl.innerHTML = 'niente';
-    }
+    const divEl = document.querySelector('.num_generator');
+    divEl.innerHTML = '';
 };
 
-const generetorEl = document.querySelector('.num_generator');
-const sizeNum = 5;
-let numRandom = [];
-let slot;
-
-for (let i = 0; i < sizeNum; i++) {
-    slot = randomNumGenerator();
-    numRandom.push(slot);
-    generetorEl.insertAdjacentHTML('beforeend', `<div class="slot slot_${i}">${slot}</div>`);
+//Acquisisco un numero dall'user
+function getNumUser() {
+    console.log('Sono qui');
+    const num = prompt('Digita numero');
+    return num;
 }
 
+//Dichiarazione variabili
+const generatorEl = document.querySelector('.num_generator');
+const sizeArr = 5;
+let numRandom = [];
+let userNum = [];
+let slot;
+
+//Scorro l'elemento nella DOM per inserire i numeri random
+for (let i = 0; i < sizeArr; i++) {
+    slot = getRandomNum();
+    numRandom.push(slot);
+    generatorEl.insertAdjacentHTML('beforeend', `<div class="slot slot_${i}">${slot}</div>`);
+}
+
+console.log('Array: ', numRandom);
+
+//Richiamo la funzione per pulire l'elemento della DOM
 setTimeout(clearDisplay, 3000);
 
-;
+//
+for (let i = 0; i < sizeArr; i++) {
+
+    userNum.push(getNumUser);
+}
+
+console.log('UsernNum: ', userNum);
