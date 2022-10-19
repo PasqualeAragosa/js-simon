@@ -60,8 +60,7 @@ setTimeout(clearDisplay, 3000);
 
 //
 for (let i = 0; i < sizeArr; i++) {
-
-    userNum.push(getNumUser);
+    userNum.push(getNumUser());
 }
 
 console.log('UsernNum: ', userNum);
